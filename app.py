@@ -1,6 +1,10 @@
 import streamlit as st
 from datetime import time
+from dotenv import load_dotenv
 from pawpal_system import Task, Pet, Owner, Scheduler
+
+# Load environment variables from .env file
+load_dotenv()
 
 st.set_page_config(page_title="PawPal+", page_icon="🐾", layout="centered")
 
